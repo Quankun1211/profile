@@ -3,6 +3,7 @@ import Header from "./components/header/Header"
 import Introduce from "./components/Personal/Introduce"
 import ListItem from "./components/Project/ListItem"
 import Detail from "./components/DetailIntro/Detail"
+import Contact from "./components/Contact/Contact"
 
 function App() {
 
@@ -19,9 +20,10 @@ function App() {
       <html data-theme= {theme}>
         <div>
           <Header handleTheme={handleTheme}/>
-          <Introduce theme={theme}/>
-          <Detail/>
-          <ListItem/>
+            <Introduce theme={theme}/>
+            <Detail/>
+            <ListItem/>
+            <Contact/>
         </div>
       </html>
     </div>

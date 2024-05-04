@@ -7,15 +7,15 @@ const Detail = () => {
   const [fav, setFav] = useState(localStorage.getItem('fav') || 12)
   const handleColor = () => {
     setColor(color === '#92cbdf' ? 'red' : '#92cbdf')
-    setFav(color === '#92cbdf' ? fav + 1 : fav - 1)
+    setFav(color === '#92cbdf' ? 13 : 12)
     localStorage.setItem('color', color === '#92cbdf' ? 'red' : '#92cbdf')
-    localStorage.setItem('fav', fav)
+    localStorage.setItem('fav', fav == 12 ? 13 : 12)
   }
 
   return (
-    <div className="w-5/6 my-20 mx-auto p-14 shadow-md">
-        <div className='mb-10 flex items-center justify-between'>
-          <div className="diff aspect-[16/9] w-2/5">
+    <div id="detail" className="w-5/6 my-24 mx-auto p-14 shadow-md">
+        <div className='mb-10 mt-20 xl:flex xl:flex-row items-center justify-between sm:flex-col'>
+          <div className="diff aspect-[16/9] xl:w-2/5 sm:w-full sm:mb-10">
             <div className="diff-item-1">
               <div className="bg-sky-700 text-primary-content text-xl font-black grid place-content-center">
                 <ul>
@@ -37,7 +37,7 @@ const Detail = () => {
             <div className="diff-resizer"></div>
           </div>
 
-          <div className="stats shadow w-3/6">
+          <div className="stats shadow xl:w-3/6 sm:w-full sm:mb-10">
             <div className="stat place-items-center">
               <div className="stat-title">Project - Mini & Large</div>
               <div className="stat-value">9</div>
@@ -47,7 +47,7 @@ const Detail = () => {
             <div className="stat place-items-center">
               <div className="stat-title">Favourites</div>
               <div className="stat-value text-secondary cursor-pointer" onClick={handleColor}><GoHeartFill color={color}/></div>
-              <div className="stat-desc text-secondary text-base">↗︎ {fav}</div>
+              <div className="stat-desc text-secondary text-base">↗︎ {fav} </div>
             </div>
             
             <div className="stat place-items-center">
@@ -56,7 +56,7 @@ const Detail = () => {
               <div className="stat-desc">↘︎ 90 (14%)</div>
             </div>
               
-            </div>
+          </div>
         </div>
 
       <div>
