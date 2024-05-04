@@ -40,3 +40,26 @@ p{
   display: block !important;
   width: 246px !important;
 }
+
+@media (max-width: 768px) {
+  
+  .sm{
+    width: 100%;
+    flex-direction: column;
+  }
+  .sm-padding{
+    padding: 0;
+  }
+  .dropdown{
+    display: block !important;
+  }
+  .hidden-header{
+    display: none;
+  }
+  .dropdown-content{
+    left: -370%;
+  }
+  .toggle-config{
+    display: block !important;
+  }
+}

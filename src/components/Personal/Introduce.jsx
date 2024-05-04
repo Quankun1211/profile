@@ -25,7 +25,7 @@ const Introduce = ({theme}) => {
         <Image/>
       </div>
 
-      <h1 className="text-2xl mt-10 font-medium">I'm <span ref={el}></span></h1>
+      <h1 className="text-2xl text-center mt-10 font-medium">I'm <span ref={el}></span></h1>
       
     </div>
   )

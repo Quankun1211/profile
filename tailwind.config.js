@@ -15,10 +15,17 @@ export default {
       '5xl': '3.052rem',
     },
     screens: {
-      'xsm': '1023px'
-    }
+      'tablet': '640px',
+
+      'laptop': '1024px',
+
+      'desktop': '1280px',
+    },
   },
   plugins: [
     require('daisyui'),
   ],
+  daisyui: {
+    themes: ["light", "dark", "cupcake"],
+  },
 }

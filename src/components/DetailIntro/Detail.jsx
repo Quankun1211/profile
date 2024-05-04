@@ -13,9 +13,9 @@ const Detail = () => {
   }
 
   return (
-    <div id="detail" className="w-5/6 my-24 mx-auto p-14 shadow-md">
-        <div className='mb-10 mt-20 flex flex-row items-center justify-between sm:flex-col'>
-          <div className="diff aspect-[16/9] w-2/5 sm:w-full sm:mb-10">
+    <div id="detail" className="w-5/6 sm-padding my-24 mx-auto p-14 shadow-md">
+        <div className='mb-10 mt-20 sm flex flex-row items-center justify-between sm:flex-col'>
+          <div className="diff aspect-[16/9] min-[1023px]:w-2/5 w-full mb-10">
             <div className="diff-item-1">
               <div className="bg-sky-700 text-primary-content text-xl font-black grid place-content-center">
                 <ul>
@@ -37,7 +37,7 @@ const Detail = () => {
             <div className="diff-resizer"></div>
           </div>
 
-          <div className="stats shadow w-3/6 sm:w-full sm:mb-10">
+          <div className="stats shadow min-[1023px]:w-3/6 w-full mb-10">
             <div className="stat place-items-center">
               <div className="stat-title">Project - Mini & Large</div>
               <div className="stat-value">9</div>
@@ -59,8 +59,7 @@ const Detail = () => {
           </div>
         </div>
 
-      <div>
-        <ul className="timeline">
+        <ul className="timeline max-[768px]:timeline-vertical">
           <li>
             <div className="timeline-start timeline-box">Primary School</div>
             <div className="timeline-middle">
@@ -99,10 +98,7 @@ const Detail = () => {
             <div className="timeline-middle">
             </div>
           </li>
-
-          
         </ul>
-      </div>
     </div>
   )
 }

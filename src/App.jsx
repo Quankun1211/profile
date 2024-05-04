@@ -10,6 +10,7 @@ function App() {
   const [theme, setTheme] = useState(localStorage.getItem('theme'))
 
   const handleTheme = () => {
+    console.log(1020);
     setTheme(theme === 'cupcake' ? 'dark' : 'cupcake')
     localStorage.setItem('theme', theme === 'cupcake' ? 'dark' : 'cupcake')
   }
@@ -19,7 +20,7 @@ function App() {
     <div className="h-screen">
       <html data-theme= {theme}>
         <div>
-          <Header handleTheme={handleTheme}/>
+            <Header handleTheme={handleTheme}/>
             <Introduce theme={theme}/>
             <Detail/>
             <ListItem/>

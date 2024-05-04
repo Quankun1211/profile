@@ -2,7 +2,6 @@ import React from 'react'
 import Modal from './Modal'
 
 const Item = ({data, index}) => {
-  console.log(data);
   return (
     <div className="card card-side bg-base-100 shadow-xl">
       <figure className='config-img xl:flex md:hidden'><img className='config-width xl:block sm:hidden' src={data.image} alt="Movie"/></figure>
