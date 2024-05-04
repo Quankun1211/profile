@@ -20,7 +20,7 @@ const Introduce = ({theme}) => {
 
   return (
     <div id="introduce" className="flex items-center justify-center flex-col mb-20">
-      <div className={`w-5/6 p-7 shadow-2xl max-[480px]:items-center max-[480px]:flex-col sm:items-center mx-auto mt-44 flex sm:flex-col xl:flex-row xl:justify-between rounded`}>
+      <div className={`w-5/6 p-7 shadow-2xl max-[1023px]:flex-col sm:items-center mx-auto mt-44 flex sm:flex-col xl:flex-row xl:justify-between rounded`}>
         <Information/>
         <Image/>
       </div>

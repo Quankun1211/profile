@@ -14,8 +14,8 @@ const Detail = () => {
 
   return (
     <div id="detail" className="w-5/6 my-24 mx-auto p-14 shadow-md">
-        <div className='mb-10 mt-20 xl:flex xl:flex-row items-center justify-between sm:flex-col'>
-          <div className="diff aspect-[16/9] xl:w-2/5 sm:w-full sm:mb-10">
+        <div className='mb-10 mt-20 flex flex-row items-center justify-between sm:flex-col'>
+          <div className="diff aspect-[16/9] w-2/5 sm:w-full sm:mb-10">
             <div className="diff-item-1">
               <div className="bg-sky-700 text-primary-content text-xl font-black grid place-content-center">
                 <ul>
@@ -37,7 +37,7 @@ const Detail = () => {
             <div className="diff-resizer"></div>
           </div>
 
-          <div className="stats shadow xl:w-3/6 sm:w-full sm:mb-10">
+          <div className="stats shadow w-3/6 sm:w-full sm:mb-10">
             <div className="stat place-items-center">
               <div className="stat-title">Project - Mini & Large</div>
               <div className="stat-value">9</div>
