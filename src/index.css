@@ -62,4 +62,14 @@ p{
   .toggle-config{
     display: block !important;
   }
+  .card-title{
+    display: block !important;
+    width: 246px !important;
+  }
+  .config-img {
+    width: 50%;
+  }
+  .config-card{
+    width: 100%;
+  }
 }
