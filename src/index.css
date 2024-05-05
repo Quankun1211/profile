@@ -67,9 +67,14 @@ p{
     width: 246px !important;
   }
   .config-img {
-    width: 50%;
+    display: none !important;
   }
-  .config-card{
-    width: 100%;
+  .ml-header{
+    margin-left: 25%;
   }
+
+  .gird{
+    width: 120% !important;
+  }
+
 }
