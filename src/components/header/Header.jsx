@@ -4,13 +4,13 @@ import AnchorLink from "react-anchor-link-smooth-scroll"
 const Header = ({handleTheme}) => {
   return (
     <div className="navbar bg-base-100 shadow-2xl fixed z-20">
-      <div className="min-[768px]:flex-1 " >
+      <div className="flex-1 " >
         <AnchorLink href="#introduce">
           <a className="btn btn-ghost text-xl">Personal website</a>
         </AnchorLink>
       </div>
       
-      <div className="ml-header">
+      <div className="">
           <div className="hidden toggle-config">
             <Toggle handleTheme={handleTheme}/>
           </div>

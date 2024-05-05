@@ -13,7 +13,7 @@ const Detail = () => {
   }
 
   return (
-    <div id="detail" className="w-5/6 sm-padding my-24 mx-auto p-14 shadow-md">
+    <div id="detail" className="min-[768px]:w-5/6 max-[768px]:w-11/12 sm-padding my-24 mx-auto p-14 shadow-md">
         <div className='mb-10 mt-20 sm flex flex-row items-center justify-between sm:flex-col'>
           <div className="diff aspect-[16/9] min-[1023px]:w-2/5 w-full mb-10">
             <div className="diff-item-1">
